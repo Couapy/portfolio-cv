@@ -1,0 +1,32 @@
+@import '../colors'
+
+body
+  padding-top: 3em
+  background-color: #{$nord01}
+
+  .root
+    margin-bottom: 3em
+
+@media print
+  body
+    padding: 0
+
+@media screen and (width <= 21cm)
+  body
+    padding: 0
+
+.root
+  display: flex
+  width: 21cm
+  height: 29.7cm
+  margin: auto
+
+  background-color: #fff
+
+  h2
+    padding-bottom: .25em
+    border-bottom: 1px solid #{$nord06}
+
+  aside, main
+    max-height: 100%
+    overflow: auto

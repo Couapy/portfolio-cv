@@ -1,0 +1,19 @@
+main
+  padding: .75em
+  flex: 6
+
+  .project, .formation
+    &>h3
+      display: inline-block
+    &>a, &>.date
+      position: relative
+      display: inline-block
+      font-size: .9em
+      font-weight: 100
+      margin-left: 1.75em
+      &::before
+        position: absolute
+        top: 0
+        left: -1.5em
+        content: "—"
+        color: #000
