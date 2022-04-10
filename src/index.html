@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maël Marchand - Curriculum Vitae</title>
 
+  <link rel="shortcut icon" href="./assets/img/profile.webp" type="image/webp">
+
   <link rel="stylesheet" href="./styles/index.sass">
 </head>
 
@@ -14,9 +16,12 @@
   <div class="root">
     <aside>
       <img src="./assets/img/profile.webp" alt="Photo de profil">
-      <h1>Marchand Maël</h1>
-      <em><i class="fa-solid fa-flag"></i> Français — <i class="fa-regular fa-cake-candles"></i> 21 ans</em>
+      <section>
+        <h1>Marchand Maël</h1>
+        <em><i class="fa-solid fa-flag"></i> Français — <i class="fa-regular fa-cake-candles"></i> 21 ans</em>
+      </section>
       <section id="contacts">
+        <h3>Me contacter</h3>
         <div>
           <h4><i class="fa-solid fa-envelope"></i> Addresse E-Mail</h4>
           <a href="mailto:contact@marchand.cloud" target="_blank">contact@marchand.cloud</a>
@@ -67,6 +72,8 @@
         </p>
       </section>
 
+      <hr>
+
       <!-- Mes formations et expériences professionnelles -->
       <section>
         <h2>Mes formations et expériences professionnelles</h2>
@@ -95,8 +102,11 @@
           <h3>Diplôme d'ingénieur spécialité Informatique</h3>
           <p class="date">2018 - 2023</p>
           <p>
-            L'UTT (Université de Technologie de Troyes) est une école d'ingénieur publique offrant la
-            formation ISI (Informatique et Systèmes d'Information).
+            L'UTT (<a href="https://www.utt.fr/" target="_blank">Université de Technologie de Troyes</a>) est une école
+            d'ingénieur publique offrant la
+            formation ISI (<a
+              href="https://www.utt.fr/formations/diplome-d-ingenieur/informatique-et-systemes-d-information"
+              target="_blank">Informatique et Systèmes d'Information</a>).
             Durant cette formation, j'ai pu maîtriser de nombreuses compétences parmis lesquelles se
             trouvent la conception logicielle, le développement logiciel, la gestion de projet, ou encore
             le déploiement d'applications en production.
@@ -112,12 +122,14 @@
         </div> -->
       </section>
 
+      <hr>
+
       <!-- Mes projets -->
       <section>
         <h2>Mes projets</h2>
         <div class="project">
           <h3>mc-manager</h3>
-          <a href="https://github.com/Couapy/mc-manager">En savoir plus</a>
+          <a href="https://github.com/Couapy/mc-manager" target="_blank">En savoir plus</a>
           <p>
             Web manager de serveurs Minecraft. Permet la gestion d'utilisateurs, de droits
             et de partages de serveurs.
@@ -134,9 +146,9 @@
             <span class="tag tag-tool">Github Actions</span>
           </p>
         </div>
-        <div class="project">
+        <!-- <div class="project">
           <h3>dynhost-updater</h3>
-          <a href="https://github.com/Couapy/dynhost-updater">En savoir plus</a>
+          <a href="https://github.com/Couapy/dynhost-updater" target="_blank">En savoir plus</a>
           <p>
             Il s'agit d'un client Dyn-DNS pour les clients d'OVH. Il permet de mettre à jour les DNS lorsque l'on
             possède une addresse ip dynamique pour ses serveurs.
@@ -145,11 +157,10 @@
             <span class="tag tag-language">Python</span>
             <span class="tag tag-tool">Docker</span>
           </p>
-          <p></p>
-        </div>
+        </div> -->
         <div class="project">
           <h3>django-template</h3>
-          <a href="https://github.com/Couapy/django-template">En savoir plus</a>
+          <a href="https://github.com/Couapy/django-template" target="_blank">En savoir plus</a>
           <p>
             Ce projet est une bibliothèque d'applications génériques pour démarrer un projet Django encore plus
             rapidement. Par exemple, j'ai développé une application de gestion des utilisateurs, de commentaires,
@@ -164,6 +175,38 @@
             <span class="tag tag-tool">Docker</span>
             <span class="tag tag-tool">Github Actions</span>
           </p>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- Mes compétences -->
+      <section>
+        <h2>Mes compétences</h2>
+        <div class="stack">
+          <div>
+            <h3>Langages</h3>
+            <span class="tag tag-lg tag-language">Python</span>
+            <span class="tag tag-lg tag-language">JavaScript</span>
+            <span class="tag tag-lg tag-language">Java</span>
+            <span class="tag tag-lg tag-language">C++</span>
+            <span class="tag tag-lg tag-language">HTML5</span>
+            <span class="tag tag-lg tag-language">CSS3</span>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <span class="tag tag-lg tag-framework">Django</span>
+            <span class="tag tag-lg tag-framework">React</span>
+            <span class="tag tag-lg tag-framework">Bootstrap</span>
+            <span class="tag tag-lg tag-framework">Node.js / Express.js</span>
+          </div>
+          <div>
+            <h3>Outils</h3>
+            <span class="tag tag-lg tag-tool">Linux</span>
+            <span class="tag tag-lg tag-tool">Docker</span>
+            <span class="tag tag-lg tag-tool">Kubernetes</span>
+            <span class="tag tag-lg tag-tool">Github Actions</span>
+          </div>
         </div>
       </section>
     </main>
