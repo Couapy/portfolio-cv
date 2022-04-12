@@ -1,21 +1,26 @@
 @import '../colors'
 
+
+@mixin generateTagColor($color)
+  background-color: lighten($color, 20%)
+  color: darken($color, 35%)
+
+
 .tag
   display: inline-block
   margin-top: .25em
   margin-bottom: .5em
   padding: .2em .4em
-  background-color: #{$nord03}
-  color: #{$nord07}
   border-radius: .175em
   font-size: .8em
+
+  @include generateTagColor($color: $nord13)
 
   &.tag-lg
     font-size: .9em
 
   &.tag-language
-    background-color: #{$nord10}
-    color: #{$nord01}
+    @include generateTagColor($color: $nord08)
+
   &.tag-tool
-    background-color: #{$nord15}
-    color: #{$nord01}
+    @include generateTagColor($color: $nord16)
