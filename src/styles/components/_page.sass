@@ -1,28 +1,30 @@
 @import '../colors'
 
 body
-  padding-top: 3em
   background-color: #{$nord01}
 
   .root
+    display: flex
+    width: 21cm
+    height: 29.7cm
+    margin: auto
     margin-bottom: 3em
+
+    background-color: #fff
+
+    aside, main
+      max-height: 100%
+      overflow: auto
 
 @media print
   body
-    padding: 0
+    background-color: #{$nord04}
 
-@media screen and (width <= 21cm)
+    .root
+      margin-bottom: 0
+
+@media screen and (width > 21cm)
   body
-    padding: 0
+    padding-top: 3em
 
-.root
-  display: flex
-  width: 21cm
-  height: 29.7cm
-  margin: auto
 
-  background-color: #fff
-
-  aside, main
-    max-height: 100%
-    overflow: auto
