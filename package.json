@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/index.html --public-url https://cv.mael.marchand.cloud",
+    "build": "parcel build src/index.html --public-url ./",
     "dev": "parcel serve src/index.html"
   },
   "dependencies": {
